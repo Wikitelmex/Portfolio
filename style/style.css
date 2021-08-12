@@ -1,5 +1,4 @@
 body {
-  /* border: 5px solid purple; */
   height: 107vh;
   background: #1c1a19;
   background-image: url(../assets/Illustration.png);
@@ -11,8 +10,6 @@ body {
 
 header {
   background-color: #3c3a39;
-
-  /* border: 5px solid red; */
   width: 100%;
 }
 
@@ -27,26 +24,31 @@ nav > ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-
-  /* border: 5px solid red; */
+  align-items: center;
   list-style-type: none;
-  flex-direction: row;
 }
 
 nav > ul > li {
-  /* border: 5px solid blue; */
   width: 77px;
-  height: 24px;
 }
 
 .my-logo {
   font-family: Roboto, sans-serif;
+  color: #dbd8d7;
+  text-decoration: none;
   font-size: 18px;
   font-style: normal;
-  font-weight: 700;
   line-height: 24px;
   letter-spacing: 0;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 h1 {
@@ -59,19 +61,36 @@ h1 {
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
-}
-
-section {
-  display: flex;
-
-  /* border: 5px solid red; */
-  flex-direction: column;
+  margin-bottom: 0;
 }
 
 h2 {
   font-family: Roboto, sans-serif;
+  margin-bottom: 0;
 }
 
 p {
   font-family: Poppins, sans-serif;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  width: 70%;
+  padding-left: 35px;
+  padding-right: 35px;
+  height: 5px;
+}
+
+.fa {
+  width: 40px;
+  font-size: 70px;
+  text-align: center;
+  text-decoration: none;
+  color: #dbd8d7;
+}
+
+.fa:hover {
+  color: #ff6b00;
 }
