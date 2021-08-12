@@ -1,3 +1,75 @@
+body {
+    /* border: 5px solid purple; */
+    height: 107vh;
+    
+    background: #1C1A19;
+    background-image: url(../assets/Illustration.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    color: white;
+    margin: 0px;
+}
+header {
+    background-color: #3C3A39;
+    /* border: 5px solid red; */
+    width: 100%;
+}
+nav {
+    background-color: #3C3A39;
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+}
+
+nav > ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    /* border: 5px solid red; */
+    list-style-type: none;
+    flex-direction: row;
+    
+}
+
+nav > ul > li {
+    /* border: 5px solid blue; */
+    width: 77px;
+    height: 24px;            
+}        
+
+.my-logo {
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0em;
+}
+
 h1 {
-    color: blue;
+    height: 124px;
+    font-family: Crete Round;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px;
+    letter-spacing: 0.3700000047683716px;
+    text-align: left;
+    color: #FF6B00;
+}
+
+section {
+    display: flex;
+    /* border: 5px solid red; */
+    flex-direction: column;
+}
+h1 {
+    /* border: 5px solid blue; */
+}
+h2 {
+    font-family: Roboto;
+}
+p {
+    font-family: Poppins;
 }
