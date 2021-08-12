@@ -1,75 +1,77 @@
 body {
-    /* border: 5px solid purple; */
-    height: 107vh;
-    
-    background: #1C1A19;
-    background-image: url(../assets/Illustration.png);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    color: white;
-    margin: 0px;
+  /* border: 5px solid purple; */
+  height: 107vh;
+  background: #1c1a19;
+  background-image: url(../assets/Illustration.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  color: white;
+  margin: 0;
 }
+
 header {
-    background-color: #3C3A39;
-    /* border: 5px solid red; */
-    width: 100%;
+  background-color: #3c3a39;
+
+  /* border: 5px solid red; */
+  width: 100%;
 }
+
 nav {
-    background-color: #3C3A39;
-    width: 100%;
-    display: flex;
-    align-items: stretch;
+  background-color: #3c3a39;
+  width: 100%;
+  display: flex;
+  align-items: stretch;
 }
 
 nav > ul {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    /* border: 5px solid red; */
-    list-style-type: none;
-    flex-direction: row;
-    
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+
+  /* border: 5px solid red; */
+  list-style-type: none;
+  flex-direction: row;
 }
 
 nav > ul > li {
-    /* border: 5px solid blue; */
-    width: 77px;
-    height: 24px;            
-}        
+  /* border: 5px solid blue; */
+  width: 77px;
+  height: 24px;
+}
 
 .my-logo {
-    font-family: Roboto;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: 0em;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0;
 }
 
 h1 {
-    height: 124px;
-    font-family: Crete Round;
-    font-size: 56px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 64px;
-    letter-spacing: 0.3700000047683716px;
-    text-align: left;
-    color: #FF6B00;
+  height: 124px;
+  font-family: Crete Round;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #ff6b00;
 }
 
 section {
-    display: flex;
-    /* border: 5px solid red; */
-    flex-direction: column;
+  display: flex;
+
+  /* border: 5px solid red; */
+  flex-direction: column;
 }
-h1 {
-    /* border: 5px solid blue; */
-}
+
 h2 {
-    font-family: Roboto;
+  font-family: Roboto;
 }
+
 p {
-    font-family: Poppins;
+  font-family: Poppins;
 }
