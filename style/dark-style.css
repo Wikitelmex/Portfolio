@@ -1,26 +1,35 @@
 body {
+  margin: 0;
+  background: #1c1a19;
+  min-width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dark {
   height: 107vh;
   background: #1c1a19;
   background-image: url(../assets/Illustration.png);
   background-position: right bottom;
   background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
   color: white;
-  margin: 0;
 }
 
-header {
+.dark header {
   background-color: #3c3a39;
   width: 100%;
 }
 
-nav {
+.dark nav {
   background-color: #3c3a39;
   width: 100%;
   display: flex;
   align-items: stretch;
 }
 
-nav > ul {
+.dark nav > ul {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -28,8 +37,37 @@ nav > ul {
   list-style-type: none;
 }
 
-nav > ul > li {
+.dark .dark-button {
+  background-color: #ff6b00;
+  color: white;
+  width: 161px;
+  height: 48px;
+  font-family: Poppins, sans-serif;
+  font-weight: bold;
+  border: none;
+}
+
+.withspace {
+  margin-bottom: 250px;
+}
+
+.dark .dark-button:hover {
+  background-color: #7c3503;
+}
+
+.sublist > li {
+  margin-bottom: 10px;
+}
+
+.dark nav > ul > li {
   width: 77px;
+}
+
+.dark hr {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  border: none;
 }
 
 .my-logo {
@@ -42,7 +80,7 @@ nav > ul > li {
   letter-spacing: 0;
 }
 
-section {
+.dark section {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -51,7 +89,7 @@ section {
   padding-right: 24px;
 }
 
-h1 {
+.dark h1 {
   height: 124px;
   font-family: Crete Round, sans-serif;
   font-size: 56px;
@@ -64,16 +102,16 @@ h1 {
   margin-bottom: 0;
 }
 
-h2 {
+.dark h2 {
   font-family: Roboto, sans-serif;
   margin-bottom: 0;
 }
 
-p {
+.dark p {
   font-family: Poppins, sans-serif;
 }
 
-footer {
+.dark footer {
   display: flex;
   justify-content: flex-start;
   align-items: stretch;
@@ -81,6 +119,40 @@ footer {
   padding-left: 35px;
   padding-right: 35px;
   height: 5px;
+}
+
+.dark .about-skills > li {
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  margin-bottom: 15px;
+  margin-left: 35px;
+}
+
+.about-skills > .li-angsquare {
+  list-style-image: url(../assets/Rectangle55.png);
+}
+
+.about-skills > .li-square {
+  list-style-image: url(../assets/Rectangle56.png);
+}
+
+.about-skills > .li-circle {
+  list-style-image: url(../assets/Rectangle57.png);
+}
+
+.sublist {
+  font-family: Inter, sans-serif;
+  list-style-type: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  list-style-image: none;
 }
 
 .fa {

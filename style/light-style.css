@@ -1,0 +1,130 @@
+.light {
+  margin-top: 20px;
+  background-color: #e5e5e5;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.light > h1 {
+  background-color: #e5e5e5;
+  height: 124px;
+  font-family: Crete Round, sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 64px;
+  letter-spacing: 0.3700000047683716px;
+  text-align: left;
+  color: #1c1a19;
+  margin-bottom: 0;
+}
+
+.light hr {
+  height: 1px;
+  background-color: #212121;
+  border: none;
+}
+
+.multi-post {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.multi-post > .mpimage {
+  width: 300px;
+  height: auto;
+  flex-grow: 1;
+}
+
+.multi-post > div {
+  font-family: Inter, sans-serif;
+  color: #091e42;
+  width: 300px;
+  height: auto;
+  flex-grow: 1;
+  margin-left: 5px;
+}
+
+.multi-post h2 {
+  font-family: Crete Round, sans-serif;
+  color: #091e42;
+}
+
+/* cards */
+.card-container {
+  display: grid;
+  grid-template-columns: 320px 320px 320px;
+  column-gap: 10px;
+  justify-content: space-between;
+}
+
+.card {
+  margin-top: 20px;
+  min-width: 280px;
+  max-width: 369px;
+  height: 386px;
+  background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../assets/card-bkg.png);
+  padding-top: 84px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 950px) {
+  .card-container {
+    grid-template-columns: 320px 320px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .card-container {
+    grid-template-columns: 320px;
+  }
+}
+
+.card-title {
+  font-family: Crete Round, sans-serif;
+  color: #fff;
+  font-size: 32px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.card .card-body {
+  font-family: Inter, sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: normal;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.card .tags {
+  display: flex;
+}
+
+.card .card-tag {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  margin-right: 12px;
+}
+
+.card .card-footer {
+  background-color: #ff6b00;
+  height: 48px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: Inter, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card a {
+  color: #fff;
+  text-decoration: none;
+}
