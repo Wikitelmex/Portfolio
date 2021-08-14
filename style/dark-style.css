@@ -17,6 +17,12 @@ body {
   color: white;
 }
 
+.bkg2 {
+  background-image: url(../assets/bkg2.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+}
+
 .dark header {
   background-color: #3c3a39;
   width: 100%;
