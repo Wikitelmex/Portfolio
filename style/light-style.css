@@ -1,12 +1,12 @@
 .light {
   margin-top: 20px;
-  background-color: #e5e5e5;
+  background-color: #fff;
   padding-left: 24px;
   padding-right: 24px;
 }
 
 .light h1 {
-  background-color: #e5e5e5;
+  background-color: #fff;
   font-family: Crete Round, sans-serif;
   font-size: 40px;
   font-style: normal;
@@ -28,6 +28,21 @@
 .multi-post {
   display: flex;
   flex-wrap: wrap;
+}
+
+.multi-post .mpfooter {
+  background-color: #ff6b00;
+  height: 48px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 24px;
+  font-family: Inter, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 196px;
+  margin-left: 0;
 }
 
 .multi-post > .mpimage {
@@ -107,17 +122,24 @@
   margin-right: 16px;
 }
 
-.card .tags {
+.tags {
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
   padding-left: 0;
 }
 
-.card .card-tag {
+.tags .card-tag {
   background: rgba(255, 255, 255, 0.24);
   padding: 10px 12px;
   margin-right: 12px;
+}
+
+.tags .card-tag-crystal {
+  background: rgba(255, 255, 255, 0.24);
+  padding: 10px 12px;
+  margin-right: 12px;
+  border: 1px solid #8993a4;
 }
 
 .card .card-footer {
@@ -133,7 +155,8 @@
   justify-content: center;
 }
 
-.card a {
+.card a,
+.multi-post a {
   color: #fff;
   text-decoration: none;
 }
