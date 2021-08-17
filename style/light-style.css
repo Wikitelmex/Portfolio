@@ -18,7 +18,6 @@
   margin-top: 120px;
 }
 
-
 .light hr {
   height: 1px;
   background-color: #212121;
@@ -164,7 +163,7 @@
 
 #h1footer {
   padding-top: 120px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -172,16 +171,15 @@
   text-align: center;
 }
 
-/*footer properties*/
+/* footer properties */
 footer {
   margin-right: 30px;
 }
 
-/* form styling*/
+/* form styling */
 .portfolio-form {
   display: flex;
   flex-direction: column;
-  
   align-items: center;
   margin-bottom: 81px;
 }
@@ -190,7 +188,7 @@ footer {
   border-color: transparent;
   border-bottom: 1px solid #979493;
   height: 54px;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -201,7 +199,7 @@ footer {
 }
 
 .portfolio-form .textarea {
-  background-color: #FBF8F7;
+  background-color: #fbf8f7;
   border-color: transparent;
   width: 327px;
   height: 114px;
@@ -209,23 +207,16 @@ footer {
 }
 
 .social-container {
-  
   height: 81px;
   justify-content: center;
   display: flex;
 }
 
 .social-icon {
-  color: #505F79;
+  color: #505f79;
 }
 
 .hrform {
-  background-color: #DFE1E6 !important;
+  background-color: #dfe1e6 !important;
   margin-bottom: 25px;
 }
-
-/*
-::-webkit-resizer {
-  background-color: red;
-}
-*/
