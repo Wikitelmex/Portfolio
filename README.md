@@ -3,7 +3,7 @@
 # Alex's Portfolio
 
 ## Live Demo (no images can be hosted)
-https://stackblitz.com/edit/web-platform-ei3wlp?file=index.html
+https://wikitelmex.github.io/Portfolio/
 
 > This is Alex portfolio, with an microverse template selected from figma.
 
@@ -15,11 +15,6 @@ This will be the main portfolio for me, starting in the day 3 of the first week 
 
 - HTML
 - CSS
-
-
-## Live Demo
-coming soon.
-[Live Demo Link](#)
 
 
 ## Getting Started
