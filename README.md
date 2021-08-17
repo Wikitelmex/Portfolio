@@ -2,7 +2,7 @@
 
 # Alex's Portfolio
 
-## Live Demo (no images can be hosted)
+## Live Demo
 https://wikitelmex.github.io/Portfolio/
 
 > This is Alex portfolio, with an microverse template selected from figma.
