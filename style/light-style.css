@@ -18,6 +18,7 @@
   margin-top: 120px;
 }
 
+
 .light hr {
   height: 1px;
   background-color: #212121;
@@ -159,4 +160,18 @@
 .multi-post a {
   color: #fff;
   text-decoration: none;
+}
+
+#h1footer {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+.portfolio-form {
+  display: flex;
+  flex-direction: column;
 }
