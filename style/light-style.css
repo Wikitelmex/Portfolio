@@ -23,10 +23,10 @@
   height: 1px;
   background-color: #212121;
   border: none;
-  margin-bottom: 80px;
 }
 
 .multi-post {
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -163,6 +163,7 @@
 }
 
 #h1footer {
+  padding-top: 120px;
   font-family: Inter;
   font-style: normal;
   font-weight: bold;
@@ -171,7 +172,60 @@
   text-align: center;
 }
 
+/*footer properties*/
+footer {
+  margin-right: 30px;
+}
+
+/* form styling*/
 .portfolio-form {
   display: flex;
   flex-direction: column;
+  
+  align-items: center;
+  margin-bottom: 81px;
 }
+
+.portfolio-form .textbox {
+  border-color: transparent;
+  border-bottom: 1px solid #979493;
+  height: 54px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.portfolio-form .textarea {
+  background-color: #FBF8F7;
+  border-color: transparent;
+  width: 327px;
+  height: 114px;
+  margin-bottom: 24px;
+}
+
+.social-container {
+  
+  height: 81px;
+  justify-content: center;
+  display: flex;
+}
+
+.social-icon {
+  color: #505F79;
+}
+
+.hrform {
+  background-color: #DFE1E6 !important;
+  margin-bottom: 25px;
+}
+
+/*
+::-webkit-resizer {
+  background-color: red;
+}
+*/

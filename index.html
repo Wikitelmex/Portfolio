@@ -24,6 +24,7 @@
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
     <!--Main Mobile-->
     <div class="dark">
@@ -233,18 +234,33 @@
             </ul>
         </section>
     </div>
-
 </body>
 
-<footer class="light">
-    <h1 id="h1footer">
-        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-    </h1>
-    <form class="portfolio-form" action="">
-        <input type="text" placeholder="Full name" required>
-        <input type="email" placeholder="Email address" required>
-        <textarea name="contact-textarea" id="" cols="30" rows="10"></textarea>
-        <button type="submit">Get It Touch</button>
-    </form>
+<footer>
+    <div class="light">
+        <h1 id="h1footer">
+            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+        </h1>
+        <form class="portfolio-form" action="">
+            <input class="textbox" type="text" placeholder="Full name" required>
+            <input class="textbox" type="email" placeholder="Email address" required>
+            
+            <div class="wrap">
+                <div class="pull-tab"></div>
+                <textarea class="textarea" name="contact-textarea" id="" cols="30" rows="10"></textarea>
+            </div>
+            
+            <button class="dark-button" type="submit">Get It Touch</button>
+        </form>
+        <hr class="hrform">
+        <div class="social-container">
+            <a href="#" class="social-icon fa fa-github fa-lg"></a>
+            <a href="#" class="social-icon fa fa-linkedin fa-lg"></a>
+            <a href="#" class="social-icon fa fa-angellist fa-lg"></a>
+            <a href="#" class="social-icon fa fa-twitter fa-lg"></a>
+            <a href="#" class="social-icon fa fa-medium fa-lg"></a>
+            
+        </div>
+    </div>
 </footer>
 </html>
