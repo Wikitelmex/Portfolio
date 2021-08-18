@@ -7,7 +7,6 @@ body {
 }
 
 .dark {
-  height: 107vh;
   background: #1c1a19;
   background-image: url(../assets/Illustration.png);
   background-position: right bottom;
@@ -43,7 +42,7 @@ body {
   list-style-type: none;
 }
 
-.dark .dark-button {
+.dark-button {
   background-color: #ff6b00;
   color: white;
   width: 161px;
@@ -57,7 +56,7 @@ body {
   margin-bottom: 250px;
 }
 
-.dark .dark-button:hover {
+.dark-button:hover {
   background-color: #7c3503;
 }
 

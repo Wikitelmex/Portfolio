@@ -1,8 +1,8 @@
 .light {
   margin-top: 20px;
   background-color: #fff;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 .light h1 {
@@ -22,10 +22,13 @@
   height: 1px;
   background-color: #212121;
   border: none;
-  margin-bottom: 80px;
 }
 
 .multi-post {
+  /* todays work */
+  grid-column-start: 1;
+  grid-column-end: 4;
+  margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
 }
@@ -92,9 +95,21 @@
   .card-container {
     grid-template-columns: 320px 320px;
   }
+
+  .multi-post {
+    /* todays work */
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
 }
 
 @media only screen and (max-width: 650px) {
+  .multi-post {
+    /* todays work */
+    grid-column-start: 1;
+    grid-column-end: 2;
+  }
+
   .card-container {
     grid-template-columns: 320px;
   }
@@ -159,4 +174,76 @@
 .multi-post a {
   color: #fff;
   text-decoration: none;
+}
+
+#h1footer {
+  padding-top: 120px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 44px;
+  text-align: center;
+}
+
+footer {
+  margin-right: 30px;
+  background-color: #fff;
+  width: 100%;
+}
+
+/* form styling */
+.portfolio-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 81px;
+}
+
+.portfolio-form .textbox {
+  border-color: transparent;
+  border-bottom: 1px solid #979493;
+  height: 54px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+  width: 100%;
+}
+
+.portfolio-form .textarea {
+  background-color: #fbf8f7;
+  border-color: transparent;
+  width: 327px;
+  height: 114px;
+  margin-bottom: 24px;
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.social-container {
+  height: 81px;
+  justify-content: center;
+  display: flex;
+}
+
+.social-icon {
+  color: #505f79;
+}
+
+.hrform {
+  background-color: #dfe1e6 !important;
+  margin-bottom: 25px;
+}
+
+.dark-container {
+  justify-content: left;
+  margin-left: 20px;
+  margin-bottom: 80px;
 }
