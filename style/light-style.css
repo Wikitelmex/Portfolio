@@ -72,9 +72,11 @@
 /* cards */
 .card-container {
   display: grid;
-  column-gap: 10px;
-  justify-content: space-between;
+  justify-content: center;
   grid-template-columns: 320px;
+  grid-gap: 24px;
+  grid-template-columns: 320px;
+  margin-bottom: 141px;
 }
 
 .card {
@@ -258,7 +260,19 @@ footer {
   .card1 .card-footer {
     display: flex;
   }
-
+  .footer-form {
+    display: flex;
+  }
+  #h1footer {
+    width: 50%;
+    padding-right: 20px;
+    margin-top: 0;
+    text-align: center;
+  }
+  .portfolio-form {
+    width: 50%;
+    align-items: flex-start;
+  }
 }
 
 @media screen and (min-width: 950px) {
@@ -280,4 +294,5 @@ footer {
     height: 36px;
     width: 36px;
   }
+
 }
