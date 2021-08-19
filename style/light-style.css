@@ -25,9 +25,6 @@
 }
 
 .multi-post {
-  /* todays work */
-  grid-column-start: 1;
-  grid-column-end: 4;
   margin-top: 80px;
   display: flex;
   flex-wrap: wrap;
@@ -35,6 +32,7 @@
 
 .multi-post .mpfooter {
   background-color: #ff6b00;
+  width: 124px;
   height: 48px;
   color: #fff;
   font-weight: bold;
@@ -74,9 +72,9 @@
 /* cards */
 .card-container {
   display: grid;
-  grid-template-columns: 320px 320px 320px;
   column-gap: 10px;
   justify-content: space-between;
+  grid-template-columns: 320px;
 }
 
 .card {
@@ -89,30 +87,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
-
-@media only screen and (max-width: 950px) {
-  .card-container {
-    grid-template-columns: 320px 320px;
-  }
-
-  .multi-post {
-    /* todays work */
-    grid-column-start: 1;
-    grid-column-end: 3;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .multi-post {
-    /* todays work */
-    grid-column-start: 1;
-    grid-column-end: 2;
-  }
-
-  .card-container {
-    grid-template-columns: 320px;
-  }
 }
 
 .card-title {
@@ -175,6 +149,9 @@
   color: #fff;
   text-decoration: none;
 }
+.multi-post p{
+  margin-right: 15px;
+}
 
 #h1footer {
   padding-top: 120px;
@@ -217,7 +194,7 @@ footer {
 .portfolio-form .textarea {
   background-color: #fbf8f7;
   border-color: transparent;
-  width: 327px;
+  width: 100%;
   height: 114px;
   margin-bottom: 24px;
   font-family: Inter, sans-serif;
@@ -244,6 +221,63 @@ footer {
 
 .dark-container {
   justify-content: left;
+  
   margin-left: 20px;
   margin-bottom: 80px;
+}
+
+/*mobile first aproach*/
+@media screen and (min-width: 650px) {
+  .card-container{
+    grid-template-columns: 320px 320px;
+  }
+  .multi-post {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+  .dark-container {
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 40px;
+  }
+  .fa-lg {
+    height: 36px;
+    width: 36px;
+  }
+  .card .card-footer {
+    display: none;
+  }
+  .card1 {
+    background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.0) 61.94%), url(../assets/card-bkg.png);
+  }
+  .card1 .card-title, .card1 .card-body {
+    visibility: hidden;
+  }
+  .card1 .card-footer {
+    display: flex;
+  }
+
+}
+
+@media screen and (min-width: 950px) {
+  .card-container{
+    grid-template-columns: 320px 320px 320px;
+  }
+  .multi-post {
+    grid-column-start: 1;
+    grid-column-end: 4;
+  }
+  .dark-container {
+    flex-direction: column;
+    height: 400px;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 40px;
+  }
+  .fa-lg {
+    height: 36px;
+    width: 36px;
+  }
 }
