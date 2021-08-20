@@ -32,12 +32,7 @@ body {
   background-color: #3c3a39;
   width: 100%;
   display: flex;
-
   justify-content: space-between;
-}
-.dark nav a {
-  display: flex;
-  justify-content: flex-end;
 }
 
 .dark nav > ul {
@@ -70,14 +65,15 @@ body {
   margin-right: 32px;
   list-style-type: none;
 }
-.menu-list-item a{
+
+.menu-list-item a {
   text-decoration: none;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
   line-height: 20px;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .wrap {
@@ -122,6 +118,11 @@ body {
   font-style: normal;
   line-height: 24px;
   letter-spacing: 0;
+}
+
+.dark nav a {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .dark-section {
@@ -180,10 +181,12 @@ body {
   margin-bottom: 15px;
   margin-left: 35px;
 }
+
 .about-div {
   min-width: 300px;
   max-width: 50%;
 }
+
 .about-skills > .li-angsquare {
   list-style-image: url(../assets/Rectangle55.png);
 }
@@ -224,40 +227,47 @@ body {
     flex-direction: row-reverse;
     justify-content: flex-end;
   }
+
   .dark {
     background-image: url(../assets/bkgdesktop.png);
     background-size: 42%;
   }
+
   .title-justify {
     display: flex;
-    align-items: center
+    align-items: center;
   }
+
   .title-justify hr {
     width: 50%;
     margin-top: 110px;
   }
+
   .title-justify h1 {
     align-self: center;
   }
+
   .bkg2 {
     padding: 50px;
     background-image: url(../assets/bkg2desktop.png);
     background-position: right 250px;
     background-size: 40%;
   }
+
   .about-skills {
     margin-top: 146px;
     margin-left: 0;
     display: flex;
     justify-content: space-between;
   }
+
   .menu-button {
     display: none;
   }
+
   .menu-list {
     display: flex;
     justify-content: space-between;
     padding-right: 15px;
   }
-
 }
