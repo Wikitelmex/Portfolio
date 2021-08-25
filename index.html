@@ -7,7 +7,6 @@
         <title>Alex Portfolio</title>
         
         <!--Style-->
-        
         <link rel="stylesheet" href="./style/dark-style.css"> 
         <link rel="stylesheet" href="./style/light-style.css"> 
         
@@ -32,37 +31,47 @@
 
                 <nav>
                     <ul>
-                        <li >
-                            <a class="my-logo" href="#">Alex Dev</a>
+                        <li class="my-logo">
+                            <a  href="#">Alex Dev</a>
                         </li>
-                        <li>
+                        <li class="menu-button">
                             <a href="#">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
                                 </svg>
                             </a>
                         </li>
+                        <li class="menu-desktop">
+                            <ul class="menu-list">
+                                <li class="menu-list-item"> <a href="#">Portfolio</a> </li>
+                                <li class="menu-list-item"> <a href="#">About</a> </li>
+                                <li class="menu-list-item"> <a href="#">Contact</a> </li>
+                                <li class="menu-list-item"> <a href="#"><img src="./assets/Union.png" alt="menu logo"></a> </li>
+                            </ul>
+                        </li>
                     </ul> 
                 </nav>
 
             </header>
-            <section>
-                <h1>Hey There. I'm Alex</h1>
-                <h2>I'm a Software Developer</h2>
-                <p>I can help you build a product, feature or website Look trough some of my work and experience! If you like what you see and have a project you need coded, don't heastiate contact me.</p>
-            </section>
-            <div class="social-container dark-container">
-                <a href="#" class="fa fa-github fa-lg"></a>
-                <a href="#" class="fa fa-linkedin fa-lg"></a>
-                <a href="#" class="fa fa-angellist fa-lg"></a>
-                <a href="#" class="fa fa-twitter fa-lg"></a>
-                <a href="#" class="fa fa-medium fa-lg"></a>
+            <div class="dark-section">
+                <div class="card-content">
+                    <h1>Hey There. I'm Alex</h1>
+                    <h2>I'm a Software Developer</h2>
+                    <p>I can help you build a product, feature or website Look trough some of my work and experience! If you like what you see and have a project you need coded, don't heastiate contact me.</p>
+                </div>
+                <div class="social-container dark-container">
+                    <a href="#" class="fa fa-github fa-lg"></a>
+                    <a href="#" class="fa fa-linkedin fa-lg"></a>
+                    <a href="#" class="fa fa-angellist fa-lg"></a>
+                    <a href="#" class="fa fa-twitter fa-lg"></a>
+                    <a href="#" class="fa fa-medium fa-lg"></a>
+                </div>
             </div>
         </div>
         
         <!--Works-->
         <div class="light">
-            <header>
+            <header class="title-justify">
                 <h1>My Recent Works</h1>
                 <hr>
             </header>
@@ -78,15 +87,15 @@
                         <div class="post">
                             <h2>Multi-Post Stories</h2>
                             <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                        </div>
-                        <ul class="tags">
-                            <li class="card-tag-crystal">css</li>
-                            <li class="card-tag-crystal">html</li>
-                            <li class="card-tag-crystal">bootstrap</li>
-                            <li class="card-tag-crystal">ruby</li>
-                        </ul>
-                        <div class="mpfooter">
-                            <a href="#">See Project</a>
+                            <ul class="tags">
+                                <li class="card-tag-crystal">css</li>
+                                <li class="card-tag-crystal">html</li>
+                                <li class="card-tag-crystal">bootstrap</li>
+                                <li class="card-tag-crystal">ruby</li>
+                            </ul>
+                            <div class="mpfooter">
+                                <a href="#">See Project</a>
+                            </div>
                         </div>
                     </div>
         
@@ -102,7 +111,7 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <a href="#">See Project</a>
+                            <a href="https://wikitelmex.github.io/Portfolio/">See Project</a>
                         </div>
                     </div>
             
@@ -189,14 +198,19 @@
         <!--About me-->
         <div class="dark bkg2">
             <section>
-                <h1 class="about">About me</h1>
-                <p>
-                    Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                </p>
-                <button type="button" class="dark-button withspace">
-                    Get My resume
-                </button>
+                <div class="about-div">
+                    <h1 class="about">About me</h1>
+                    <p>
+                        Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                    </p>
+                    <button type="button" class="dark-button withspace">
+                        Get My resume
+                    </button>
+                </div>
+                
                 <hr>
+
+                <!--center-->
                 <ul class="about-skills">
                     <li class="li-angsquare">
                         Language
@@ -236,25 +250,27 @@
         </div>
         <footer>
             <div class="light">
-                <h1 id="h1footer">
-                    I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-                </h1>
-                <form name="contact-form" class="portfolio-form" action="https://formspree.io/f/mnqlovey" method="POST">
-                    <input class="textbox" type="text" placeholder="Full name" maxlength="30" required>
-                    <input class="textbox" type="email" placeholder="Email address" name="_replyto" required>
-                    
-                    <div class="wrap">
-                        <div class="pull-tab"></div>
-                        <textarea placeholder="Enter text here" 
-                                    class="textarea" 
-                                    name="contact-textarea" 
-                                    cols="30" rows="10"  
-                                    maxlength="500"
-                                    required></textarea>
-                    </div>
-                    
-                    <button class="dark-button" type="submit">Get It Touch</button>
-                </form>
+                <div class="footer-form">
+                    <h1 id="h1footer">
+                        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                    </h1>
+                    <form name="contact-form" class="portfolio-form" action="https://formspree.io/f/mnqlovey" method="POST">
+                        <input class="textbox" type="text" placeholder="Full name" maxlength="30" required>
+                        <input class="textbox" type="email" placeholder="Email address" name="_replyto" required>
+                        
+                        <div class="wrap">
+                            <div class="pull-tab"></div>
+                            <textarea placeholder="Enter text here" 
+                                        class="textarea" 
+                                        name="contact-textarea" 
+                                        cols="30" rows="10"  
+                                        maxlength="500"
+                                        required></textarea>
+                        </div>
+                        
+                        <button class="dark-button" type="submit">Get It Touch</button>
+                    </form>
+                </div>
                 <hr class="hrform">
                 <div class="social-container">
                     <a href="#" class="social-icon fa fa-github fa-lg"></a>
