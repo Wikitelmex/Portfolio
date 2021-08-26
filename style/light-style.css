@@ -5,10 +5,12 @@
   padding-right: 32px;
 }
 
-.light h1 {
+.light h1,
+.maintitle {
   background-color: #fff;
   font-family: Crete Round, sans-serif;
   font-size: 40px;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 400;
   line-height: 64px;
@@ -32,11 +34,11 @@
 
 .multi-post .mpfooter {
   background-color: #ff6b00;
-  width: 124px;
   height: 48px;
   color: #fff;
   font-weight: bold;
   font-size: 17px;
+  font-size: 1.063rem;
   line-height: 24px;
   font-family: Inter, sans-serif;
   display: flex;
@@ -64,7 +66,9 @@
 .multi-post h2 {
   font-style: normal;
   font-weight: normal;
+  font-family: 'Crete Round', sans-serif;
   font-size: 32px;
+  font-size: 2.5rem;
   line-height: 44px;
   color: #091e42;
 }
@@ -81,7 +85,6 @@
   margin-top: 20px;
   min-width: 280px;
   max-width: 369px;
-  height: 386px;
   background: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%), url(../assets/card-bkg.png);
   padding-top: 84px;
   display: flex;
@@ -94,6 +97,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
+  font-size: 2rem;
   line-height: 44px;
   color: #fff;
   margin-left: 16px;
@@ -104,6 +108,7 @@
   font-family: Inter, sans-serif;
   color: #fff;
   font-size: 16px;
+  font-size: 1rem;
   line-height: 24px;
   font-style: normal;
   font-weight: normal;
@@ -146,6 +151,7 @@
   color: #fff;
   font-weight: bold;
   font-size: 17px;
+  font-size: 1.063rem;
   line-height: 24px;
   font-family: Inter, sans-serif;
   display: flex;
@@ -169,6 +175,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
+  font-size: 2rem;
   line-height: 44px;
   text-align: center;
 }
@@ -194,6 +201,7 @@ footer {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
+  font-size: 0.938rem;
   line-height: 24px;
   margin-bottom: 25px;
   padding-left: 10px;
@@ -210,6 +218,7 @@ footer {
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
+  font-size: 0.938rem;
   line-height: 24px;
 }
 
@@ -258,7 +267,7 @@ footer {
   }
 
   .card .card-footer {
-    display: none;
+    visibility: hidden;
   }
 
   .card:hover {
@@ -271,7 +280,7 @@ footer {
   }
 
   .card:hover .card-footer {
-    display: flex;
+    visibility: visible;
   }
 
   .footer-form {
