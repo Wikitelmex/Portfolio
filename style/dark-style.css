@@ -46,7 +46,8 @@ body {
 }
 
 .dark-button {
-  background-color: #ff6b00;
+  /*background-color: #ff6b00;*/
+  background-color: #D14904;
   color: white;
   width: 161px;
   height: 48px;
@@ -88,7 +89,7 @@ body {
 }
 
 .dark-button:hover {
-  background-color: #7c3503;
+  transform: scale(1.1);
 }
 
 .sublist > li {
