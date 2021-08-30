@@ -289,6 +289,7 @@ body {
 
 .hrlight {
   height: 1px;
-  background-color: #6F6C6B;
+  background-color: #6f6c6b;
   border: none;
+  width: 95%;
 }

@@ -307,8 +307,7 @@ footer {
   }
 }
 
-
-/*SideNav Styling*/
+/* SideNav Styling */
 .sidenav {
   height: 100%;
   width: 0;
@@ -316,7 +315,7 @@ footer {
   z-index: 1;
   top: 0;
   left: 0;
-  background-color: #111;
+  background-color: #3c3a39;
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
@@ -325,12 +324,12 @@ footer {
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-family: Inter;
+  font-family: Inter, sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 2rem;
   line-height: 44px;
-  color: #FFF5E1;
+  color: #fff5e1;
   display: block;
   transition: 0.3s;
 }
