@@ -360,6 +360,7 @@ footer {
   background-color: rgb(0,0,0);
   background-color: rgba(0,0,0,0.8);
   border: 5px solid blue; 
+  filter: blur(10px);
 }
 
 .is-blurred {
@@ -367,12 +368,18 @@ footer {
 }
 
 .modal-content {
+  display: none;
+  position: fixed;
+  z-index: 2; 
+  left: 0;
+  top: 0;
   background-color: #fefefe;
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
   color: black;
+  filter: blur(0px);
 }
 
 .close {

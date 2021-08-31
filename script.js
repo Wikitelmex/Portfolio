@@ -12,6 +12,8 @@ var modal = document.getElementById("myModal");
 
 var body = document.getElementsByTagName("body");
 
+var modalcontent = document.querySelector(".modal-content");
+
 function openModal() {
   
   modal.style.display = "block";
