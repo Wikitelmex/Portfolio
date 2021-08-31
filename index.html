@@ -19,7 +19,6 @@
 
           gtag('config', 'G-SDGZKMYCGD');
         </script>
-        
 
         <!--Roboto-->
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
@@ -39,17 +38,25 @@
         <div class="dark">
             <header>
 
+                <!--side nav-->
+                <div id="mySidenav" class="sidenav">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                    <hr class="hrlight">
+                    <a href="#about" onclick="closeNav()">About</a>
+                    <hr class="hrlight">
+                    <a href="#contact" onclick="closeNav()">Contact</a>
+                    <hr class="hrlight">
+                </div>
+
+                <!--Horizontal nav-->
                 <nav>
                     <ul>
                         <li class="my-logo">
                             <a  href="#">Alex Dev</a>
                         </li>
                         <li class="menu-button">
-                            <a href="#">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-list" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                                </svg>
-                            </a>
+                            <a onclick="openNav()">&#9776;</a>
                         </li>
                         <li class="menu-desktop">
                             <ul class="menu-list">
@@ -80,7 +87,7 @@
         </div>
         
         <!--Works-->
-        <div class="light">
+        <div class="light" id="portfolio">
             <header class="title-justify">
                 <h2 class="maintitle">My Recent Works</h2>
                 <hr>
@@ -206,7 +213,7 @@
         </div>
 
         <!--About me-->
-        <div class="dark bkg2">
+        <div class="dark bkg2" id="about">
             <section>
                 <div class="about-div">
                     <h2 class="about maintitledark">About me</h2>
@@ -218,7 +225,7 @@
                     </button>
                 </div>
                 
-                <hr>
+                <hr class="hrdark">
 
                 <!--center-->
                 <ul class="about-skills">
@@ -259,7 +266,7 @@
             </section>
         </div>
         <footer>
-            <div class="light">
+            <div class="light" id="contact">
                 <div class="footer-form">
                     <h2 id="h1footer">
                         I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
@@ -291,5 +298,8 @@
                 </div>
             </div>
         </footer>
+    
+        <!--custom Scripts-->
+        <script src="./script.js"></script>
     </body>
 </html>
