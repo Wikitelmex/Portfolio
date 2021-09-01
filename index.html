@@ -19,7 +19,8 @@
 
           gtag('config', 'G-SDGZKMYCGD');
         </script>
-
+        
+        <!--Fonts-->
         <!--Roboto-->
         <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
         <!--Crete round-->
@@ -34,282 +35,308 @@
     </head>
 
     <body>
+        <main id="myContainer" class="MainContainer">
         <!--Main Mobile-->
-        <div class="dark">
-            <header>
+            <div class="dark">
+                <header>
 
-                <!--side nav-->
-                <div id="mySidenav" class="sidenav">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <a href="#portfolio" onclick="closeNav()">Portfolio</a>
-                    <hr class="hrlight">
-                    <a href="#about" onclick="closeNav()">About</a>
-                    <hr class="hrlight">
-                    <a href="#contact" onclick="closeNav()">Contact</a>
-                    <hr class="hrlight">
-                </div>
+                    <!--side nav-->
+                    <div id="mySidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                        <a href="#portfolio" onclick="closeNav()">Portfolio</a>
+                        <hr class="hrlight">
+                        <a href="#about" onclick="closeNav()">About</a>
+                        <hr class="hrlight">
+                        <a href="#contact" onclick="closeNav()">Contact</a>
+                        <hr class="hrlight">
+                    </div>
 
-                <!--Horizontal nav-->
-                <nav>
-                    <ul>
-                        <li class="my-logo">
-                            <a  href="#">Alex Dev</a>
-                        </li>
-                        <li class="menu-button">
-                            <a onclick="openNav()">&#9776;</a>
-                        </li>
-                        <li class="menu-desktop">
-                            <ul class="menu-list">
-                                <li class="menu-list-item"> <a href="#">Portfolio</a> </li>
-                                <li class="menu-list-item"> <a href="#">About</a> </li>
-                                <li class="menu-list-item"> <a href="#">Contact</a> </li>
-                                <li class="menu-list-item"> <a href="#"><img src="./assets/Union.png" alt="menu logo"></a> </li>
-                            </ul>
-                        </li>
-                    </ul> 
-                </nav>
+                    <!--Horizontal nav-->
+                    <nav>
+                        <ul>
+                            <li class="my-logo">
+                                <a  href="#">Alex Dev</a>
+                            </li>
+                            <li class="menu-button">
+                                <a onclick="openNav()">&#9776;</a>
+                            </li>
+                            <li class="menu-desktop">
+                                <ul class="menu-list">
+                                    <li class="menu-list-item"> <a href="#">Portfolio</a> </li>
+                                    <li class="menu-list-item"> <a href="#">About</a> </li>
+                                    <li class="menu-list-item"> <a href="#">Contact</a> </li>
+                                    <li class="menu-list-item"> <a href="#"><img src="./assets/Union.png" alt="menu logo"></a> </li>
+                                </ul>
+                            </li>
+                        </ul> 
+                    </nav>
 
-                <!--Modal window (isn't default visible)-->
-                <div id="myModal" class="modal">
-                </div>
-                    
-                <div style="border: 1px solid red;" class="modal-content">
-                        <span class="close" onclick="closeModal()">&times;</span>
-                        <p>Some text in the Modal..</p>
-                </div>
-                  
-                
-
-            </header>
-            <div class="dark-section">
-                <div class="card-content">
-                    <h1>Hey There. I'm Alex</h1>
-                    <h2 class="head2m">I'm a Software Developer</h2>
-                    <p>I can help you build a product, feature or website Look trough some of my work and experience! If you like what you see and have a project you need coded, don't heastiate contact me.</p>
-                </div>
-                <div class="social-container dark-container">
-                    <a href="#" class="fa fa-github fa-lg"></a>
-                    <a href="#" class="fa fa-linkedin fa-lg"></a>
-                    <a href="#" class="fa fa-angellist fa-lg"></a>
-                    <a href="#" class="fa fa-twitter fa-lg"></a>
-                    <a href="#" class="fa fa-medium fa-lg"></a>
+                        
+                </header>
+                <div class="dark-section">
+                    <div class="card-content">
+                        <h1>Hey There. I'm Alex</h1>
+                        <h2 class="head2m">I'm a Software Developer</h2>
+                        <p>I can help you build a product, feature or website Look trough some of my work and experience! If you like what you see and have a project you need coded, don't heastiate contact me.</p>
+                    </div>
+                    <div class="social-container dark-container">
+                        <a href="#" class="fa fa-github fa-lg"></a>
+                        <a href="#" class="fa fa-linkedin fa-lg"></a>
+                        <a href="#" class="fa fa-angellist fa-lg"></a>
+                        <a href="#" class="fa fa-twitter fa-lg"></a>
+                        <a href="#" class="fa fa-medium fa-lg"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <!--Works-->
-        <div class="light" id="portfolio">
-            <header class="title-justify">
-                <h2 class="maintitle">My Recent Works</h2>
-                <hr>
-            </header>
-            <section>
+            
+            <!--Works-->
+            <div class="light" id="portfolio">
+                <header class="title-justify">
+                    <h2 class="maintitle">My Recent Works</h2>
+                    <hr>
+                </header>
+                <section>
 
 
-        
-                <div class="card-container">
+            
+                    <div class="card-container">
 
-                    <!--Multi-post card-->
-                    <div class="multi-post">
-                        <img class="mpimage" src="./assets/multipostplaceholder.png" alt="Portfolio pageexample">
-                        <div class="post">
-                            <h2>Multi-Post Stories</h2>
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
-                            <ul class="tags">
-                                <li class="card-tag-crystal">css</li>
-                                <li class="card-tag-crystal">html</li>
-                                <li class="card-tag-crystal">bootstrap</li>
-                                <li class="card-tag-crystal">ruby</li>
-                            </ul>
-                            <div class="mpfooter">
-                                <a onclick="openModal()">See Project</a>
+                        <!--Multi-post card-->
+                        <div class="multi-post">
+                            <img class="mpimage" src="./assets/multipostplaceholder.png" alt="Portfolio pageexample">
+                            <div class="post">
+                                <h2>Multi-Post Stories</h2>
+                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.</p>
+                                <ul class="tags">
+                                    <li class="card-tag-crystal">css</li>
+                                    <li class="card-tag-crystal">html</li>
+                                    <li class="card-tag-crystal">bootstrap</li>
+                                    <li class="card-tag-crystal">ruby</li>
+                                </ul>
+                                <div class="mpfooter">
+                                    <a onclick="openModal()">See Project</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-        
-                    <!--Normal cards-->
-                    <div class="card">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <div class="card-body">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <ul class="tags">
-                                <li class="card-tag">html</li>
-                                <li class="card-tag">bootstrap</li>
-                                <li class="card-tag">ruby</li>
-                            </ul>
+            
+                        <!--Normal cards-->
+                        <div class="card">
+                            <h2 class="card-title">Profesional Art Printing Data</h2>
+                            <div class="card-body">
+                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                                <ul class="tags">
+                                    <li class="card-tag">html</li>
+                                    <li class="card-tag">bootstrap</li>
+                                    <li class="card-tag">ruby</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="https://wikitelmex.github.io/Portfolio/">See Project</a>
+                            </div>
                         </div>
-                        <div class="card-footer">
-                            <a href="https://wikitelmex.github.io/Portfolio/">See Project</a>
+                
+                        <div class="card">
+                            <h2 class="card-title">Profesional Art Printing Data</h2>
+                            <div class="card-body">
+                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                                <ul class="tags">
+                                    <li class="card-tag">html</li>
+                                    <li class="card-tag">bootstrap</li>
+                                    <li class="card-tag">ruby</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">See Project</a>
+                            </div>
                         </div>
+
+                        <div class="card">
+                            <h2 class="card-title">Profesional Art Printing Data</h2>
+                            <div class="card-body">
+                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                                <ul class="tags">
+                                    <li class="card-tag">html</li>
+                                    <li class="card-tag">bootstrap</li>
+                                    <li class="card-tag">ruby</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">See Project</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h2 class="card-title">Profesional Art Printing Data</h2>
+                            <div class="card-body">
+                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                                <ul class="tags">
+                                    <li class="card-tag">html</li>
+                                    <li class="card-tag">bootstrap</li>
+                                    <li class="card-tag">ruby</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">See Project</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h2 class="card-title">Profesional Art Printing Data</h2>
+                            <div class="card-body">
+                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                                <ul class="tags">
+                                    <li class="card-tag">html</li>
+                                    <li class="card-tag">bootstrap</li>
+                                    <li class="card-tag">ruby</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">See Project</a>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <h2 class="card-title">Profesional Art Printing Data</h2>
+                            <div class="card-body">
+                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
+                                <ul class="tags">
+                                    <li class="card-tag">html</li>
+                                    <li class="card-tag">bootstrap</li>
+                                    <li class="card-tag">ruby</li>
+                                </ul>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#">See Project</a>
+                            </div>
+                        </div>
+
                     </div>
             
-                    <div class="card">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <div class="card-body">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <ul class="tags">
-                                <li class="card-tag">html</li>
-                                <li class="card-tag">bootstrap</li>
-                                <li class="card-tag">ruby</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#">See Project</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <div class="card-body">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <ul class="tags">
-                                <li class="card-tag">html</li>
-                                <li class="card-tag">bootstrap</li>
-                                <li class="card-tag">ruby</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#">See Project</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <div class="card-body">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <ul class="tags">
-                                <li class="card-tag">html</li>
-                                <li class="card-tag">bootstrap</li>
-                                <li class="card-tag">ruby</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#">See Project</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <div class="card-body">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <ul class="tags">
-                                <li class="card-tag">html</li>
-                                <li class="card-tag">bootstrap</li>
-                                <li class="card-tag">ruby</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#">See Project</a>
-                        </div>
-                    </div>
-
-                    <div class="card">
-                        <h2 class="card-title">Profesional Art Printing Data</h2>
-                        <div class="card-body">
-                            <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                            <ul class="tags">
-                                <li class="card-tag">html</li>
-                                <li class="card-tag">bootstrap</li>
-                                <li class="card-tag">ruby</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <a href="#">See Project</a>
-                        </div>
-                    </div>
-
-                </div>
-        
-            </section>
-        </div>
-
-        <!--About me-->
-        <div class="dark bkg2" id="about">
-            <section>
-                <div class="about-div">
-                    <h2 class="about maintitledark">About me</h2>
-                    <p>
-                        Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
-                    </p>
-                    <button type="button" class="dark-button withspace">
-                        Get My resume
-                    </button>
-                </div>
-                
-                <hr class="hrdark">
-
-                <!--center-->
-                <ul class="about-skills">
-                    <li class="li-angsquare">
-                        Language
-                        <ul class="sublist">
-                            <li>Javascript</li>
-                            <li>Ruby</li>
-                            <li>Html</li>
-                            <li>Css</li>
-                        </ul>
-                    </li>
-
-                    <li class="li-square">
-                        Frameworks
-                        <ul class="sublist">
-                            <li>Bootstrap</li>
-                            <li>Ruby on Rails</li>
-                            <li>RSPec</li>
-                            <li>CapyBara</li>
-                            <li>Selenium</li>
-                        </ul>
-                    </li>
-
-
-
-                    <li class="li-circle">
-                        Skills
-                        <ul class="sublist">
-                            <li>Codekit</li>
-                            <li>Github</li>
-                            <li>Codepen</li>
-                            <li>Gitlab</li>
-                            <li>Terminal</li>
-                        </ul>
-                    </li>
-                </ul>
-            </section>
-        </div>
-        <footer>
-            <div class="light" id="contact">
-                <div class="footer-form">
-                    <h2 id="h1footer">
-                        I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
-                    </h2>
-                    <form name="contact-form" class="portfolio-form" action="https://formspree.io/f/mnqlovey" method="POST">
-                        <input class="textbox" type="text" placeholder="Full name" maxlength="30" required>
-                        <input class="textbox" type="email" placeholder="Email address" name="_replyto" required>
-                        
-                        <div class="wrap">
-                            <div class="pull-tab"></div>
-                            <textarea placeholder="Enter text here" 
-                                        class="textarea" 
-                                        name="contact-textarea" 
-                                        cols="30" rows="10"  
-                                        maxlength="500"
-                                        required></textarea>
-                        </div>
-                        
-                        <button class="dark-button" type="submit">Get It Touch</button>
-                    </form>
-                </div>
-                <hr class="hrform">
-                <div class="social-container">
-                    <a href="#" class="social-icon fa fa-github fa-lg"></a>
-                    <a href="#" class="social-icon fa fa-linkedin fa-lg"></a>
-                    <a href="#" class="social-icon fa fa-angellist fa-lg"></a>
-                    <a href="#" class="social-icon fa fa-twitter fa-lg"></a>
-                    <a href="#" class="social-icon fa fa-medium fa-lg"></a>
-                </div>
+                </section>
             </div>
-        </footer>
-    
+
+            <!--About me-->
+            <div class="dark bkg2" id="about">
+                <section>
+                    <div class="about-div">
+                        <h2 class="about maintitledark">About me</h2>
+                        <p>
+                            Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                        </p>
+                        <button type="button" class="dark-button withspace">
+                            Get My resume
+                        </button>
+                    </div>
+                    
+                    <hr class="hrdark">
+
+                    <!--center-->
+                    <ul class="about-skills">
+                        <li class="li-angsquare">
+                            Language
+                            <ul class="sublist">
+                                <li>Javascript</li>
+                                <li>Ruby</li>
+                                <li>Html</li>
+                                <li>Css</li>
+                            </ul>
+                        </li>
+
+                        <li class="li-square">
+                            Frameworks
+                            <ul class="sublist">
+                                <li>Bootstrap</li>
+                                <li>Ruby on Rails</li>
+                                <li>RSPec</li>
+                                <li>CapyBara</li>
+                                <li>Selenium</li>
+                            </ul>
+                        </li>
+
+
+
+                        <li class="li-circle">
+                            Skills
+                            <ul class="sublist">
+                                <li>Codekit</li>
+                                <li>Github</li>
+                                <li>Codepen</li>
+                                <li>Gitlab</li>
+                                <li>Terminal</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+            <footer>
+                <div class="light" id="contact">
+                    <div class="footer-form">
+                        <h2 id="h1footer">
+                            I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
+                        </h2>
+                        <form name="contact-form" class="portfolio-form" action="https://formspree.io/f/mnqlovey" method="POST">
+                            <input class="textbox" type="text" placeholder="Full name" maxlength="30" required>
+                            <input class="textbox" type="email" placeholder="Email address" name="_replyto" required>
+                            
+                            <div class="wrap">
+                                <div class="pull-tab"></div>
+                                <textarea placeholder="Enter text here" 
+                                            class="textarea" 
+                                            name="contact-textarea" 
+                                            cols="30" rows="10"  
+                                            maxlength="500"
+                                            required></textarea>
+                            </div>
+                            
+                            <button class="dark-button" type="submit">Get It Touch</button>
+                        </form>
+                    </div>
+                    <hr class="hrform">
+                    <div class="social-container">
+                        <a href="#" class="social-icon fa fa-github fa-lg"></a>
+                        <a href="#" class="social-icon fa fa-linkedin fa-lg"></a>
+                        <a href="#" class="social-icon fa fa-angellist fa-lg"></a>
+                        <a href="#" class="social-icon fa fa-twitter fa-lg"></a>
+                        <a href="#" class="social-icon fa fa-medium fa-lg"></a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <!--Modal window (isn't default visible)-->
+        <div id="myModal" class="Modal is-hidden is-visuallyHidden">
+            <div class="Modal-content"> 
+                <h2>
+                    Multi Post Stories
+                    <span id="closeModal" class="Close" onclick="closeModal()">&times;</span>
+                </h2>
+                <ul class="tags">
+                    <li class="card-tag-crystal">css</li>
+                    <li class="card-tag-crystal">html</li>
+                    <li class="card-tag-crystal">bootstrap</li>
+                    <li class="card-tag-crystal">ruby</li>
+                </ul>
+                <div class="multi-post modal-post">
+                    <img class="modalimage" src="./assets/Snapshoot Portfolio.png" alt="Portfolio pageexample">
+                    <div>
+                        <p>
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
+                        </p>
+                        <div class="flex-btn">
+                            <button class="dark-button flex-btn justify-sa">
+                                <span>See Live</span>
+                                <img src="./assets/Icon-see live.svg" alt="go live project icon">
+                            </button>
+                            <button class="dark-button flex-btn justify-sa">
+                                <span>See Source</span>
+                                <img src="./assets/icon-source.svg" alt="source project icon">
+                            </button>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </div>
+
         <!--custom Scripts-->
         <script src="./script.js"></script>
     </body>

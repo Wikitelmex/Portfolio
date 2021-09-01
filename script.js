@@ -8,27 +8,34 @@ function closeNav() {
 
 
 //testing functions modal
-var modal = document.getElementById("myModal");
-
-var body = document.getElementsByTagName("body");
-
-var modalcontent = document.querySelector(".modal-content");
+var modal=document.getElementById("myModal");
+var container=document.getElementById("myContainer");
+var body=document.getElementsByTagName("body")
 
 function openModal() {
-  
-  modal.style.display = "block";
-  modalcontent.style.display ="block";
+  modal.className="Modal is-visuallyHidden";
+  container.className="MainContainer is-blurred";
+  modal.className="Modal";
+  container.parentElement.className="ModalOpen";
 }
 
 function closeModal() {
-  modal.style.display = "none";
+  modal.className="Modal is-hidden is-visuallyHidden";
+  body.className="";
+  container.className="MainContainer";
+  container.parentElement.className="";
 }
 
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
+window.onclick = function(e){
+  e.target==modal&&(
+      modal.className="Modal is-hidden",
+      body.className="",
+      container.className="MainContainer",
+      container.parentElement.className=""
+  )
+};
+
+
 
 module.exports = openNav();
 module.exports = closeNav();
