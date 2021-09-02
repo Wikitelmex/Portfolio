@@ -187,8 +187,6 @@ function closeModal() {
   container.parentElement.className = '';
 }
 
-// validating form
-
 module.exports = openNav();
 module.exports = closeNav();
 module.exports = openModal();
