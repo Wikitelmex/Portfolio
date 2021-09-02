@@ -10,6 +10,8 @@ const modal = document.getElementById('myModal');
 const container = document.getElementById('myContainer');
 const body = document.getElementsByTagName('body');
 const cardContainer = document.querySelector('.card-container');
+const contactForm = document.querySelector('#contact-form');
+const errorBox = document.querySelector('.errorBox');
 
 const mockData = [
   {
@@ -61,6 +63,34 @@ const mockData = [
     projectURL: 'https://www.github.com/wikitelmex',
   },
 ];
+
+function isLowerCase(word) {
+  if (word === word.toLowerCase()) {
+    return true;
+  }
+  return false;
+}
+
+function clearForm() {
+  contactForm.querySelector('#fullName').value = '';
+  contactForm.querySelector('#contactEmail').value = '';
+  contactForm.querySelector('#textArea').value = '';
+}
+
+function validateForm() {
+  if (!isLowerCase(contactForm.querySelector('#contactEmail').value)) {
+    errorBox.className = 'errorBox goVisible';
+  } else {
+    errorBox.className = 'errorBox';
+    contactForm.submit();
+    clearForm();
+  }
+}
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateForm();
+});
 
 function loadCards(cardsData = mockData) {
   cardsData.forEach((element) => {
