@@ -441,3 +441,13 @@ footer {
 .justify-sa {
   justify-content: space-around;
 }
+
+/* Form js validation */
+.errorBox {
+  visibility: hidden;
+  font-family: Inter, sans-serif;
+}
+
+.goVisible {
+  visibility: visible !important;
+}
