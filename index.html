@@ -101,7 +101,7 @@
             
                     <div class="card-container">
 
-                        <!--Multi-post card-->
+                        <!--Main Card-->
                         <div class="multi-post">
                             <img class="mpimage" src="./assets/multipostplaceholder.png" alt="Portfolio pageexample">
                             <div class="post">
@@ -114,102 +114,19 @@
                                     <li class="card-tag-crystal">ruby</li>
                                 </ul>
                                 <div class="mpfooter">
-                                    <a onclick="openModal()">See Project</a>
+                                    <a onclick="openModal(
+                                        'my header',
+                                        ['my badge'],
+                                        './assets/Snapshoot-Portfolio.png',
+                                        'my modal text',
+                                        'https://www.github.com',
+                                        'https://www.github.com/wikitelmex'
+                                    )">See Project</a>
                                 </div>
                             </div>
                         </div>
             
-                        <!--Normal cards-->
-                        <div class="card">
-                            <h2 class="card-title">Profesional Art Printing Data</h2>
-                            <div class="card-body">
-                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                                <ul class="tags">
-                                    <li class="card-tag">html</li>
-                                    <li class="card-tag">bootstrap</li>
-                                    <li class="card-tag">ruby</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="https://wikitelmex.github.io/Portfolio/">See Project</a>
-                            </div>
-                        </div>
-                
-                        <div class="card">
-                            <h2 class="card-title">Profesional Art Printing Data</h2>
-                            <div class="card-body">
-                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                                <ul class="tags">
-                                    <li class="card-tag">html</li>
-                                    <li class="card-tag">bootstrap</li>
-                                    <li class="card-tag">ruby</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#">See Project</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <h2 class="card-title">Profesional Art Printing Data</h2>
-                            <div class="card-body">
-                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                                <ul class="tags">
-                                    <li class="card-tag">html</li>
-                                    <li class="card-tag">bootstrap</li>
-                                    <li class="card-tag">ruby</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#">See Project</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <h2 class="card-title">Profesional Art Printing Data</h2>
-                            <div class="card-body">
-                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                                <ul class="tags">
-                                    <li class="card-tag">html</li>
-                                    <li class="card-tag">bootstrap</li>
-                                    <li class="card-tag">ruby</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#">See Project</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <h2 class="card-title">Profesional Art Printing Data</h2>
-                            <div class="card-body">
-                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                                <ul class="tags">
-                                    <li class="card-tag">html</li>
-                                    <li class="card-tag">bootstrap</li>
-                                    <li class="card-tag">ruby</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#">See Project</a>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <h2 class="card-title">Profesional Art Printing Data</h2>
-                            <div class="card-body">
-                                <p>A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard</p>
-                                <ul class="tags">
-                                    <li class="card-tag">html</li>
-                                    <li class="card-tag">bootstrap</li>
-                                    <li class="card-tag">ruby</li>
-                                </ul>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#">See Project</a>
-                            </div>
-                        </div>
-
+                        <!--Array of cards from js here-->
                     </div>
             
                 </section>
@@ -288,7 +205,8 @@
                                             required></textarea>
                             </div>
                             
-                            <button class="dark-button" type="submit">Get It Touch</button>
+                            <button id="button1" class="dark-button" type="submit">Get It Touch</button>
+                            
                         </form>
                     </div>
                     <hr class="hrform">
@@ -306,28 +224,26 @@
         <!--Modal window (isn't default visible)-->
         <div id="myModal" class="Modal is-hidden is-visuallyHidden">
             <div class="Modal-content"> 
+                
                 <h2>
-                    Multi Post Stories
+                    <span id="modalHeader"></span>
                     <span id="closeModal" class="Close" onclick="closeModal()">&times;</span>
                 </h2>
-                <ul class="tags">
-                    <li class="card-tag-crystal">css</li>
-                    <li class="card-tag-crystal">html</li>
-                    <li class="card-tag-crystal">bootstrap</li>
-                    <li class="card-tag-crystal">ruby</li>
+                <ul id="modalBadges" class="tags">
                 </ul>
                 <div class="multi-post modal-post">
-                    <img class="modalimage" src="./assets/Snapshoot-Portfolio.png" alt="Portfolio pageexample">
+                    <img id="modalImage" class="modalimage" src="./assets/Rectangle55.png" alt="Portfolio pageexample">
                     <div>
-                        <p>
+                        <p id="modalText">
                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent
                         </p>
                         <div class="flex-btn">
-                            <button type="button" class="dark-button flex-btn justify-sa">
+                            <!--<button onclick="window.open('https://www.github.com')">Continue</button>-->
+                            <button id="modalGoLive" type="button" class="dark-button flex-btn justify-sa">
                                 <span>See Live</span>
                                 <img src="./assets/Icon-see-live.svg" alt="go live project icon">
                             </button>
-                            <button type="button" class="dark-button flex-btn justify-sa">
+                            <button id="modalGoSource" type="button" class="dark-button flex-btn justify-sa">
                                 <span>See Source</span>
                                 <img src="./assets/icon-source.svg" alt="source project icon">
                             </button>

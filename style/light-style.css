@@ -3,6 +3,7 @@
   background-color: #fff;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 5px;
 }
 
 .light h1,
@@ -163,6 +164,7 @@
 .multi-post a {
   color: #fff;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .multi-post p {
