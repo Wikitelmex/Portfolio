@@ -12,6 +12,7 @@ const body = document.getElementsByTagName('body');
 const cardContainer = document.querySelector('.card-container');
 const contactForm = document.querySelector('#contact-form');
 const errorBox = document.querySelector('.errorBox');
+const elementsPreserved = document.querySelectorAll('.preserve');
 
 const mockData = [
   {
@@ -64,6 +65,17 @@ const mockData = [
   },
 ];
 
+let dataStorage = {};
+/* start of preservation data */
+elementsPreserved.forEach((element) => {
+  element.addEventListener('input', (e) => {
+    dataStorage[e.target.id] = e.target.value;
+    localStorage.setItem('contactFormStorage', JSON.stringify(dataStorage));
+  });
+});
+
+/* end of preservation data */
+
 function isLowerCase(word) {
   if (word === word.toLowerCase()) {
     return true;
@@ -83,6 +95,8 @@ function validateForm() {
   } else {
     errorBox.className = 'errorBox';
     contactForm.submit();
+    localStorage.removeItem('contactFormStorage');
+    dataStorage = {};
     clearForm();
   }
 }
@@ -178,6 +192,20 @@ window.onclick = function wclick(event) {
 
 window.onload = function () {
   loadCards();
+
+  if (localStorage.key('contactFormStorage') !== null) {
+    dataStorage = JSON.parse(localStorage.getItem('contactFormStorage'));
+  } else {
+    return null;
+  }
+
+  elementsPreserved.forEach((element) => {
+    const currentElement = JSON.parse(localStorage.getItem('contactFormStorage'))[element.id];
+    if (currentElement !== undefined) {
+      element.value = currentElement;
+    }
+  });
+  return null;
 };
 
 function closeModal() {
